@@ -3,18 +3,10 @@ import { PageLayout } from '@/components/layout/PageLayout'
 import { Button } from '@/components/ui/Button'
 import { GoldDivider } from '@/components/ui'
 import { useAuthStore } from '@/store/auth.store'
-
-const menuItems = [
-  { icon: '📅', label: 'My appointments', sub: 'View & manage bookings', to: '/appointments' },
-  { icon: '♡', label: 'Favourite salons', sub: 'Saved salons', to: '/' },
-  { icon: '⭐', label: 'My reviews', sub: 'Reviews given', to: '/' },
-  { icon: '🔔', label: 'Notifications', sub: 'All enabled', to: '/' },
-  { icon: '🔒', label: 'Privacy & security', sub: 'Password, settings', to: '/' },
-  { icon: '🌐', label: 'Language', sub: 'English', to: '/' },
-  { icon: '❓', label: 'Help & support', sub: 'FAQ, contact us', to: '/' },
-]
+import { useTranslation } from 'react-i18next'
 
 export const ProfilePage = () => {
+  const { t } = useTranslation()
   const navigate = useNavigate()
   const { user, isAuthenticated, logout } = useAuthStore()
 
@@ -22,11 +14,11 @@ export const ProfilePage = () => {
     <PageLayout>
       <div className="px-5 pt-14 flex flex-col items-center">
         <div className="w-20 h-20 rounded-full bg-gradient-to-br from-gold to-gold-dim flex items-center justify-center text-4xl mb-4">👤</div>
-        <h1 className="text-xl font-black mb-1">My Profile</h1>
-        <p className="text-white/40 text-sm mb-8">Sign in to access your profile</p>
-        <Button fullWidth onClick={() => navigate('/login')}>Sign In</Button>
+        <h1 className="text-xl font-black mb-1">{t('profile.myProfile')}</h1>
+        <p className="text-white/40 text-sm mb-8">{t('profile.signInPrompt')}</p>
+        <Button fullWidth onClick={() => navigate('/login')}>{t('profile.signIn')}</Button>
         <div className="mt-3 w-full">
-          <Button fullWidth variant="outline" onClick={() => navigate('/register')}>Create Account</Button>
+          <Button fullWidth variant="outline" onClick={() => navigate('/register')}>{t('profile.createAccount')}</Button>
         </div>
       </div>
     </PageLayout>
@@ -50,7 +42,7 @@ export const ProfilePage = () => {
 
           {/* Stats */}
           <div className="flex gap-6 mt-5 bg-dark-card border border-dark-border rounded-2xl px-6 py-3">
-            {[{ label: 'Bookings', value: '0' }, { label: 'Favourites', value: '0' }, { label: 'Reviews', value: '0' }].map((s, i) => (
+            {[{ label: t('profile.bookings'), value: '0' }, { label: t('profile.favourites'), value: '0' }, { label: t('profile.reviews'), value: '0' }].map((s, i) => (
               <div key={s.label} className="flex gap-6 items-center">
                 {i > 0 && <div className="w-px h-8 bg-dark-border" />}
                 <div className="text-center">
@@ -64,7 +56,7 @@ export const ProfilePage = () => {
 
         {/* Menu */}
         <div className="space-y-2">
-          {menuItems.map(item => (
+          {t('profile.menu', { returnObjects: true }).map((item: any) => (
             <button
               key={item.label}
               onClick={() => navigate(item.to)}
@@ -84,7 +76,7 @@ export const ProfilePage = () => {
 
         <GoldDivider />
 
-        <Button fullWidth variant="danger" onClick={handleLogout}>Sign Out</Button>
+        <Button fullWidth variant="danger" onClick={handleLogout}>{t('profile.signOut')}</Button>
         <div className="h-4" />
       </div>
     </PageLayout>

@@ -19,4 +19,24 @@
     "noSalonsFound": "No salons found",
     "tryDifferent": "Try a different search or filter"
   }
+  "profile": {
+    "myProfile": "My Profile",
+    "signInPrompt": "Sign in to access your profile",
+    "signIn": "Sign In",
+    "createAccount": "Create Account",
+    "bookings": "Bookings",
+    "favourites": "Favourites",
+    "reviews": "Reviews",
+    "menu": [
+      { "icon": "📅", "label": "My appointments", "sub": "View & manage bookings", "to": "/appointments" },
+      { "icon": "♡", "label": "Favourite salons", "sub": "Saved salons", "to": "/" },
+      { "icon": "⭐", "label": "My reviews", "sub": "Reviews given", "to": "/" },
+      { "icon": "🔔", "label": "Notifications", "sub": "All enabled", "to": "/" },
+      { "icon": "🔒", "label": "Privacy & security", "sub": "Password, settings", "to": "/" },
+      { "icon": "🌐", "label": "Language", "sub": "English", "to": "/" },
+      { "icon": "❓", "label": "Help & support", "sub": "FAQ, contact us", "to": "/" }
+    ],
+    "signOut": "Sign Out",
+    "signOutConfirm": "Are you sure you want to sign out?"
+  }
 }
