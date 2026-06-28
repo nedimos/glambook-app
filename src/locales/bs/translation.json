@@ -1,0 +1,22 @@
+{
+  "nav": {
+    "home": "Početna",
+    "bookings": "Rezervacije",
+    "profile": "Profil"
+  },
+  "home": {
+    "welcome": "Dobrodošli",
+    "welcomeBack": "Dobrodošli nazad, {{name}}",
+    "find": "Pronađite svoj",
+    "perfect": "savršeni",
+    "appointment": "termin",
+    "searchPlaceholder": "Pretraži salone, usluge...",
+    "filters": ["Sve","Kosa","Nokti","Masaža","Frizer","Tretman lica"],
+    "featured": "Istaknuto",
+    "seeAll": "Pogledaj sve",
+    "nearbySalons": "Saloni u blizini",
+    "salonsFound": "{{city}} · pronađeno {{count}} salona",
+    "noSalonsFound": "Nema pronađenih salona",
+    "tryDifferent": "Pokušajte drugačiju pretragu ili filter"
+  }
+}

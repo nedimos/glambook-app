@@ -1,0 +1,22 @@
+{
+  "nav": {
+    "home": "Home",
+    "bookings": "Bookings",
+    "profile": "Profile"
+  },
+  "home": {
+    "welcome": "Welcome",
+    "welcomeBack": "Welcome back, {{name}}",
+    "find": "Find your",
+    "perfect": "perfect",
+    "appointment": "appointment",
+    "searchPlaceholder": "Search salons, services...",
+    "filters": ["All","Hair","Nails","Massage","Barber","Facial"],
+    "featured": "Featured",
+    "seeAll": "See all",
+    "nearbySalons": "Nearby Salons",
+    "salonsFound": "{{city}} · {{count}} salons found",
+    "noSalonsFound": "No salons found",
+    "tryDifferent": "Try a different search or filter"
+  }
+}
