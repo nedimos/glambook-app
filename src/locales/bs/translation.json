@@ -2,27 +2,27 @@
   "nav": {
     "home": "Početna",
     "bookings": "Rezervacije",
-     "profile": "Profil",
-    "profile": {
-      "myProfile": "Moj profil",
-      "signInPrompt": "Prijavite se da pristupite profilu",
-      "signIn": "Prijavi se",
-      "createAccount": "Kreiraj nalog",
-      "bookings": "Rezervacije",
-      "favourites": "Favoriti",
-      "reviews": "Recenzije",
-      "menu": [
-        { "icon": "📅", "label": "Moji termini", "sub": "Pregled i upravljanje rezervacijama", "to": "/appointments" },
-        { "icon": "♡", "label": "Omiljeni saloni", "sub": "Sačuvani saloni", "to": "/" },
-        { "icon": "⭐", "label": "Moje recenzije", "sub": "Dostavljene recenzije", "to": "/" },
-        { "icon": "🔔", "label": "Obavještenja", "sub": "Sve uključeno", "to": "/" },
-        { "icon": "🔒", "label": "Privatnost i sigurnost", "sub": "Lozinka, podešavanja", "to": "/" },
-        { "icon": "🌐", "label": "Jezik", "sub": "Bosanski", "to": "/" },
-        { "icon": "❓", "label": "Pomoć i podrška", "sub": "FAQ, kontakt", "to": "/" }
-      ],
-      "signOut": "Odjavi se",
-      "signOutConfirm": "Jeste li sigurni da se želite odjaviti?"
-    }
+    "profile": "Profil"
+  },
+  "profile": {
+    "myProfile": "Moj profil",
+    "signInPrompt": "Prijavite se da pristupite profilu",
+    "signIn": "Prijavi se",
+    "createAccount": "Kreiraj nalog",
+    "bookings": "Rezervacije",
+    "favourites": "Favoriti",
+    "reviews": "Recenzije",
+    "menu": [
+      { "icon": "📅", "label": "Moji termini", "sub": "Pregled i upravljanje rezervacijama", "to": "/appointments" },
+      { "icon": "♡", "label": "Omiljeni saloni", "sub": "Sačuvani saloni", "to": "/" },
+      { "icon": "⭐", "label": "Moje recenzije", "sub": "Dostavljene recenzije", "to": "/" },
+      { "icon": "🔔", "label": "Obavještenja", "sub": "Sve uključeno", "to": "/" },
+      { "icon": "🔒", "label": "Privatnost i sigurnost", "sub": "Lozinka, podešavanja", "to": "/" },
+      { "icon": "🌐", "label": "Jezik", "sub": "Bosanski", "to": "/" },
+      { "icon": "❓", "label": "Pomoć i podrška", "sub": "FAQ, kontakt", "to": "/" }
+    ],
+    "signOut": "Odjavi se",
+    "signOutConfirm": "Jeste li sigurni da se želite odjaviti?"
   },
   "home": {
     "welcome": "Dobrodošli",
